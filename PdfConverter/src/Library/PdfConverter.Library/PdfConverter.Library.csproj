@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\PdfConverter.DataAccess\PdfConverter.DataAccess.csproj">
+      <Project>{b709abd0-15b5-437e-a120-e13197c82883}</Project>
+      <Name>PdfConverter.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\PdfConverter.DomainModel\PdfConverter.DomainModel.csproj">
+      <Project>{a9bf0223-77d4-4a88-b2ec-8a8820cc2a12}</Project>
+      <Name>PdfConverter.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
