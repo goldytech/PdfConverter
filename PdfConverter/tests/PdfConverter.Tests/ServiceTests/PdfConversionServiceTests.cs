@@ -1,15 +1,11 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace PdfConverter.Tests.ServiceTests
+﻿namespace PdfConverter.Tests.ServiceTests
 {
+    using System;
     using System.Diagnostics.CodeAnalysis;
 
     using Contoso.PdfConverter.Library;
 
-    using Telerik.JustMock;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
     /// Summary description for PdfConversionServiceTests
@@ -70,7 +66,6 @@ namespace PdfConverter.Tests.ServiceTests
         {
             // ARRANGE
             var sut = new PdfConversionService();
-
             // ACT
             
             

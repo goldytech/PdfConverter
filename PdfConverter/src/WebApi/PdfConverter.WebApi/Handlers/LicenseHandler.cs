@@ -1,4 +1,13 @@
-﻿namespace Contoso.PdfConverter.WebApi.Handlers
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="LicenseHandler.cs" company="Contoso">
+//        MIT License
+// </copyright>
+// <summary>
+//   The license handler which checks for the License Key in the Authorization header of http request.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Contoso.PdfConverter.WebApi.Handlers
 {
     using System;
     using System.Net;
