@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="0d9a2b74-f770-4f21-9a4b-f39b5fa31e5f"
+  name="PdfConverterModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="e90e0d13-23f8-4092-8400-7ae62a59ca3b">
+      <body>Not in Scope
+</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="2d651aa9-2ce8-41bb-85af-21ecaded6f9e"
+          LastKnownName="ThirdPartyPdfConverter"
+          LastKnownLocation="PdfConverterModeling.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="02cea3ec-458a-4e8c-ad91-b5fbc981fe3e"
+        name="PdfConverter.Library"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a94d1f0a-03c8-42b0-94a5-f03593e6cca4"
+            name="App Unit Of Work">
+            <componentMoniker
+              Id="e93d7501-4ce1-42fc-b936-2a59e026cd3f"
+              LastKnownName="PdfConverter.DataAccess"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+          <dependency
+            Id="ea15c5d0-d2a5-4b3d-86a1-692db578db8b">
+            <componentMoniker
+              Id="2d651aa9-2ce8-41bb-85af-21ecaded6f9e"
+              LastKnownName="ThirdPartyPdfConverter"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+          <dependency
+            Id="aaa47f32-68e5-435f-ae6f-408f063dba20">
+            <componentMoniker
+              Id="5bd6e919-740b-4738-bcb0-3caffc2d0c35"
+              LastKnownName="PdfConverter.DomainModel"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5bd6e919-740b-4738-bcb0-3caffc2d0c35"
+        name="PdfConverter.DomainModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8d76cd19-5a76-4c6a-9822-bf680176fab3">
+            <componentMoniker
+              Id="e93d7501-4ce1-42fc-b936-2a59e026cd3f"
+              LastKnownName="PdfConverter.DataAccess"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e93d7501-4ce1-42fc-b936-2a59e026cd3f"
+        name="PdfConverter.DataAccess"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e6dd1a6b-e7bf-42e7-bced-fe3e3f006c53"
+            name="EF ORM">
+            <componentMoniker
+              Id="46665a0f-36aa-4432-a5b8-6b25766c833d"
+              LastKnownName="PdfConverter.SQLServerDb"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="46665a0f-36aa-4432-a5b8-6b25766c833d"
+        name="PdfConverter.SQLServerDb"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2d651aa9-2ce8-41bb-85af-21ecaded6f9e"
+        name="ThirdPartyPdfConverter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1f0ba179-80be-449e-b979-477196bd8073"
+        name="PdfConverterWebApi"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="bd6922ab-0258-4c2c-84cb-c34c1ff088c6">
+            <componentMoniker
+              Id="e93d7501-4ce1-42fc-b936-2a59e026cd3f"
+              LastKnownName="PdfConverter.DataAccess"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+          <dependency
+            Id="3e68777f-92dc-4ddf-a189-f90fb78fa095"
+            name="IPdfConversionService">
+            <componentMoniker
+              Id="02cea3ec-458a-4e8c-ad91-b5fbc981fe3e"
+              LastKnownName="PdfConverter.Library"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e295f8cc-ec69-44e4-873d-46ae6ef9efa2"
+        name="IPdfConverterService"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="be7fd354-c398-4ab0-8991-0a92a3570d36"
+        name="PdfConverterThickClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2cb6d9a3-10d6-426d-a0e6-b76ca9a17360"
+            name="PdfConverter">
+            <componentMoniker
+              Id="02cea3ec-458a-4e8c-ad91-b5fbc981fe3e"
+              LastKnownName="PdfConverter.Library"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b07691a1-1923-43c6-bd96-9923d0185d70"
+        name="IPdfConversionService"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f8eed1de-6858-41b6-aafd-f16f944b89eb"
+        name="PdfConverterThinClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="053523ab-5fc9-42bb-a3b1-0e8e45f87787">
+            <componentMoniker
+              Id="1f0ba179-80be-449e-b979-477196bd8073"
+              LastKnownName="PdfConverterWebApi"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="383ad45b-018a-4d91-a111-09ad939e32c6"
+        name="PdfConverter.Website"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="192e9b8b-cba6-4614-b4e9-61fd5b369c1b">
+            <componentMoniker
+              Id="1f0ba179-80be-449e-b979-477196bd8073"
+              LastKnownName="PdfConverterWebApi"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+          <dependency
+            Id="ea974377-9920-4f7e-995a-39567c73ee98">
+            <componentMoniker
+              Id="e93d7501-4ce1-42fc-b936-2a59e026cd3f"
+              LastKnownName="PdfConverter.DataAccess"
+              LastKnownLocation="PdfConverterModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

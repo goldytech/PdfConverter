@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6D7D08
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "PdfConverterModeling", "Modelling\PdfConverterModeling\PdfConverterModeling.modelproj", "{60CF012A-3C75-4DC0-B84C-24E7D38DDBE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{A941D8A0-7404-497E-8971-CECA028C9C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A941D8A0-7404-497E-8971-CECA028C9C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A941D8A0-7404-497E-8971-CECA028C9C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CF012A-3C75-4DC0-B84C-24E7D38DDBE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CF012A-3C75-4DC0-B84C-24E7D38DDBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CF012A-3C75-4DC0-B84C-24E7D38DDBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CF012A-3C75-4DC0-B84C-24E7D38DDBE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

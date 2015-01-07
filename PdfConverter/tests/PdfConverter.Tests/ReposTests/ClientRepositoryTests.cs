@@ -50,7 +50,7 @@ namespace PdfConverter.Tests.ReposTests
 
         }
 
-        [TestMethod]
+       // [TestMethod]
         public void Get_By_Id_Should_Return_Single_Record()
         {
             // ARRANGE

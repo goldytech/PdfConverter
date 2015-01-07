@@ -72,7 +72,7 @@
             var fileBytes = new byte[1000];
             var random = new Random();
             random.NextBytes(fileBytes);
-            var response = sut.Convert(fileBytes, @"D:\SomeFile.pdf").Result;
+            var response = sut.Convert(fileBytes, @"D:\SomeFile.doc").Result;
 
             Assert.IsNotNull(response.Response);
 
